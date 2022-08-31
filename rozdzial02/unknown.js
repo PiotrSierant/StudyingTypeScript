@@ -2,14 +2,11 @@
 // val = "to jest łańcuch";
 // val = new Array();
 // val.push(33); // error (podkreślona metoda push, typ unknown przepuszcza.)
-
 // console.log(val);
-
-let val: unknown = 22;
+var val = 22;
 val = "to jest łańcuch";
 val = new Array();
 if (val instanceof Array) {
     val.push(33);
 }
-
-console.log(val);   
+console.log(val);
