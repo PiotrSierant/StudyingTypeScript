@@ -1,4 +1,4 @@
-function oldEnough(age: number): never | boolean {
+function oldEnough(age) {
     if (age > 59) {
         throw Error("Jesteś za stary!");
     }
@@ -7,11 +7,11 @@ function oldEnough(age: number): never | boolean {
     }
     return true;
 }
-
-function howMuchYouWeigh(kilograms: number): never | string | boolean {
+function howMuchYouWeigh(kilograms) {
     if (kilograms > 100) {
         throw new Error("You are fat");
-    } else {
+    }
+    else {
         return 'waga w normie';
     }
     return true;
