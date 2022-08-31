@@ -1,4 +1,4 @@
 let unionObj: null | { name: string } = null;
-unionObj = { name: 'Janek'};
+unionObj = { name: 'Janek' };
 
-console.log(unionObj);
+console.log(unionObj); // unionObj może być typu null lub string
