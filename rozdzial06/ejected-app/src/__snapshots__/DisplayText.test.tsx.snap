@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test komponentu DisplayText jest zgodny z migawką 1`] = `
+<body>
+  <div>
+    <form>
+      <div>
+        <label>
+          Jak masz na imię?
+        </label>
+      </div>
+      <div>
+        <input
+          data-testid="user-input"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          data-testid="input-submit"
+        >
+          Wyświetl komunikat
+        </button>
+      </div>
+      <div>
+        <label
+          data-testid="final-msg"
+        />
+      </div>
+      <ul
+        style="margin-top: 1rem; list-style-type: none;"
+      />
+    </form>
+  </div>
+</body>
+`;

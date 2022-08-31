@@ -1,0 +1,19 @@
+INSERT INTO public."ThreadCategories"(
+"Name", "Description")
+VALUES ('Programowanie', '');
+
+INSERT INTO public."ThreadCategories"(
+"Name", "Description")
+VALUES ('Gotowanie', '');
+
+INSERT INTO public."ThreadCategories"(
+"Name", "Description")
+VALUES ('Gry', '');
+
+INSERT INTO public."ThreadCategories"(
+"Name", "Description")
+VALUES ('Finanse', '');
+
+INSERT INTO public."ThreadCategories"(
+"Name", "Description")
+VALUES ('Podróże', '');
