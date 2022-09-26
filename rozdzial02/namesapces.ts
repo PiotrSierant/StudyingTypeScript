@@ -1,8 +1,8 @@
 namespace A {
-    class FirstClass {}
+    class FirstClass { }
 }
 
 namespace B {
-    class SecondClass {}
+    class SecondClass { }
     const test = new FirstClass();
 }
