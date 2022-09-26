@@ -1,10 +1,10 @@
 class Person2 {
-    constructor(private message: string) { }
+    constructor(private readonly message: string) { }
 
     speak() {
-        console.log(this.message);
+        console.log('Mówię: ' + this.message);
     }
 }
 
-const piter = new Person2('cześć');
+const piter = new Person2('Cześć Piotr');
 piter.speak();

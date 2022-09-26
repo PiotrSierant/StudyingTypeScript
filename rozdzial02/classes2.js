@@ -3,9 +3,9 @@ var Person2 = /** @class */ (function () {
         this.message = message;
     }
     Person2.prototype.speak = function () {
-        console.log(this.message);
+        console.log('Mówię: ' + this.message);
     };
     return Person2;
 }());
-var piter = new Person2('cześć');
+var piter = new Person2('Cześć Piotr');
 piter.speak();
