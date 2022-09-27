@@ -15,5 +15,6 @@ class B {
 const a = new A();
 a.go();
 const b = new B();
+b.go();
 b.go = b.go.bind(a);
 b.go();

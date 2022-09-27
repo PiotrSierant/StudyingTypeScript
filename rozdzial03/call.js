@@ -11,3 +11,4 @@ function checkMyThis(age) {
 
 checkMyThis();
 checkMyThis.call(callerObj, 25);
+checkMyThis.call({ name: 'Piotr' }, 25);

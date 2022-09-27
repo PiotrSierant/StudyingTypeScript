@@ -19,5 +19,6 @@ var B = /** @class */ (function () {
 var a = new A();
 a.go();
 var b = new B();
+b.go();
 b.go = b.go.bind(a);
 b.go();
