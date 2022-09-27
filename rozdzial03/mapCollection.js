@@ -7,6 +7,9 @@ console.log(mappedEmp);
 console.log('get', mappedEmp.get("Kuba"));
 console.log('size', mappedEmp.size);
 
-for(let [key, val] of mappedEmp) {
+for (let [key, val] of mappedEmp) {
     console.log('iteracja:', key, val);
+}
+for (let obj of mappedEmp) {
+    console.log('iteracja:', obj);
 }
