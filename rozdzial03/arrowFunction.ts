@@ -1,8 +1,8 @@
-// const myFunc = (message: string): void => {
-//     console.log(message);
-// }
+const myFunc = (message: string): void => {
+    console.log(message);
+}
 
-// myFunc('Witaj!');
+myFunc('Witaj!');
 
 const func = () => console.log('func');
 const func1 = () => ({ name: 'Dawid' });
