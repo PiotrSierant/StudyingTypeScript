@@ -7,8 +7,12 @@ function getEmployee(id) {
     }
 }
 
-const { name: fullName, age } = getEmployee(22);
-console.log('pracownik:', fullName, age);
+// const { name: fullName, age } = getEmployee(22);
+// console.log('pracownik:', fullName, age);
+
+const { name: firstName, age, address: street, country } = getEmployee(10);
+console.log('pracownik', firstName, age, street, country);
+
 
 
 function getEmployeeWorkInfo(id) {
@@ -19,5 +23,5 @@ function getEmployeeWorkInfo(id) {
     ]
 }
 
-const [id, officeAddress] = getEmployeeWorkInfo(33);
-console.log('pracownik:', id, officeAddress);
+const [id, street2, officeAddress] = getEmployeeWorkInfo(33);
+console.log('pracownik:', id, street2, officeAddress,);
