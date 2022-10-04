@@ -17,7 +17,7 @@ const DisplayText: FC<DisplayTextProps> = ({ getUserFullname }) => {
     const onClickShowMsg = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         setMsg(`Witaj na zajęciach z testowania Reacta, ${await getUserFullname(txt)}!`);
-        //setTodoControl(<UserTodos username={txt} />);
+        // setTodoControl(<UserTodos username={txt} />);
     }
 
     /*
@@ -63,9 +63,9 @@ const DisplayText: FC<DisplayTextProps> = ({ getUserFullname }) => {
                     onClick={onClickShowMsg}>Wyświetl komunikat</button>
             </div>
             <div>
-                <label data-testid="final-msg">{msg}</label> 
+                <label data-testid="final-msg">{msg}</label>
             </div>
-            <ul style={{marginTop: '1rem', listStyleType:'none'}}>
+            <ul style={{ marginTop: '1rem', listStyleType: 'none' }}>
                 {todoControl}
             </ul>
         </form>
