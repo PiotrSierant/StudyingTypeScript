@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route exact={true} path="/" component={ScreenA}></Route>
         <Route path="/b" component={ScreenB}></Route>
-        <Route path="/c" render={renderScreenC}></Route>
+        <Route path="/c:/:userid" render={renderScreenC}></Route>
       </Switch>
     </div>
   );
