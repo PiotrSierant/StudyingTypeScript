@@ -1,17 +1,23 @@
 import React from 'react';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { ScreenA } from './ScreenA';
 import { ScreenB } from './ScreenB';
+import { ScreenC } from './ScreenC';
 
 
 function App() {
+  const renderScreenC = (props: any) => {
+    console.log('wlasciwosc props komponentu ScrennC', props);
+    return <ScreenC {...props} message='To jest Ekran C' />
+  }
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<ScreenA />}></Route>
-        <Route path="/b" element={<ScreenB />}></Route>
-      </Routes>
+      <Switch>
+        <Route exact={true} path="/" component={ScreenA}></Route>
+        <Route path="/b" component={ScreenB}></Route>
+        <Route path="/c" render={renderScreenC}></Route>
+      </Switch>
     </div>
   );
 }
