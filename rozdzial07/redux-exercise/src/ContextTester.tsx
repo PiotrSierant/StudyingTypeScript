@@ -25,8 +25,8 @@ export const ContextTester = () => {
             <button onClick={onclickAge}>Aktualizuj wiek</button>
             <TestContext.Provider value={{ username: 'pjoter', userage }}>
                 <UserAgeComp />
+                <UserNameComp />
             </TestContext.Provider>
-            <UserNameComp />
             <br />
             <button onClick={onClickLocalState}>Aktualizuj stan lokalny</button>
             <br />
