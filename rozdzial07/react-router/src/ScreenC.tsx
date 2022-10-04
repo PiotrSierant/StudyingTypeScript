@@ -1,9 +1,20 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 
-interface ScreenCProps{
+interface ScreenCProps {
     message: string;
+    history: any;
+    match: any;
 }
 
-export const ScreenC: FC<ScreenCProps> = ({message}) => {
-    return <div>{message}</div>
+export const ScreenC: FC<ScreenCProps> = (props) => {
+    const onClickGoBack = () => {
+        props.history.goBack();
+    }
+    return <div>
+        <div>{"Twój indetyfikator:" + props.match.params.userid}</div>
+        <div>{props.message}</div>
+        <div>
+            <button onClick={onClickGoBack}>Go back!</button>
+        </div>
+    </div>
 }
